@@ -7,6 +7,10 @@ build:
 run:
 	go run main.go < cfg.yml
 
+publish:
+	git tag v0.1.0
+	git push --tags
+
 test:
 	mkdir -p tmp
 	go run main.go -json < test/fixtures/docs.yml > tmp/out.json
@@ -15,7 +19,7 @@ test:
 	diff -u tmp/expected_sorted.json tmp/out_sorted.json
 
 install:
-	go install github.com/inem/ysplit@latest
+	go install github.com/inem/ysplit@v0.1.0
 
 .PHONY: test
 
