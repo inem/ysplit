@@ -1,0 +1,16 @@
+{
+  "docs": [
+    { "domains": [ "docs.test.com", "internal-docs.test.com" ] },
+    {
+      "registry": "https://gitlab.com/inem/docs/container_registry",
+      "repo": "https://github.com/inem/docs",
+      "easypanel": "https://infra.test.com/projects/infra/app/docs",
+      "dns": "https://dash.cloudflare.com/1d19c8ce1377dd5e/test.com/dns/records"
+    },
+    {
+      "actions": {
+        "deploy": "http://3.2.2.1:3000/api/deploy/aa4c50c81df5090243ffa19d4"
+      }
+    }
+  ]
+}
