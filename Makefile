@@ -14,6 +14,9 @@ test:
 	jq -S . tmp/out.json > tmp/out_sorted.json
 	diff -u tmp/expected_sorted.json tmp/out_sorted.json
 
+install:
+	go install github.com/inem/ysplit@latest
+
 .PHONY: test
 
 ARGS = $(filter-out $@,$(MAKECMDGOALS))

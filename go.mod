@@ -1,4 +1,4 @@
-module ysplit
+module github.com/inem/ysplit
 
 go 1.24.0
 
